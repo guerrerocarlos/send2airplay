@@ -1,4 +1,4 @@
-send-to-airplay -- Send any video from your disk to your AirPlay device.
+Send any video to your AirPlay device.
 =============================
 
 send-to-airplay is a command line script for streaming videos from your drive to Apple's 
