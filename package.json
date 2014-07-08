@@ -1,6 +1,6 @@
 {
   "name": "sent2airplay",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Script for sending any video file directly to your AirPlay enabled device.",
   "repository": {
     "type": "git",
