@@ -1,11 +1,7 @@
 {
   "name": "sent-to-airplay",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Script for sending any video file directly to your AirPlay enabled device.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "http://github.com/guerrerocarlos/send-to-airplay"
@@ -28,7 +24,8 @@
     "serve-static": "^1.3.0"
   },
   "bin": {
-    "s2a": "bin/send-to-airplay"
+    "s2a": "bin/send-to-airplay",
+    "send-to-airplay": "bin/send-to-airplay"
   },
   "preferGlobal": true
 }

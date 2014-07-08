@@ -27,3 +27,9 @@ From source:
     Serving directory: /Users/youruser/Download/ on port 4007
     Calling Play in: http://192.168.0.101:4007/52.mp4
     Playing file 52.mp4 in your AirPlay Device
+
+## Extra
+
+For convenience a 's2a' command alias is also created.
+
+    $ s2a ~/Download/52.mp4
