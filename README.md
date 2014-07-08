@@ -22,7 +22,7 @@ From source:
 
 ## Example
 
-    send-to-airplay ~/Download/52.mp4
+    $ send-to-airplay ~/Download/52.mp4
     Sending /Users/youruser/Download/52.mp4 by Airplay...
     Serving directory: /Users/youruser/Download/ on port 4007
     Calling Play in: http://192.168.0.101:4007/52.mp4
