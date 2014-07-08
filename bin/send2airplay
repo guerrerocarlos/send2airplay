@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 'use strict';
 
-process.bin = process.title = 'send-to-airplay';
+process.bin = process.title = 'send2airplay';
 
 var path = require('path')
 var connect = require('connect');
-var browser = require('airplay').createBrowser();
+var browser = require( 'airplay2' ).createBrowser();
 var address = require('network-address');
 var serveStatic = require('serve-static');
 var escaped_str = require('querystring')
@@ -19,10 +19,12 @@ var port = process.argv[3] || 4007
 console.log("Serving directory: "+dirname+" on port "+port)
 connect().use(serveStatic(dirname)).listen(port);
 
-browser.on('deviceOnline', function(device) {
-      var resource = 'http://'+address()+':'+port+'/'+escaped_str.escape(basename)
-      console.log("Calling Play in: "+resource)
-      device.play(resource, 0);
-      console.log("Playing file "+basename+" in your AirPlay device.");
+
+browser.on( 'deviceOn', function( device ) {
+    var resource = 'http://'+address()+':'+port+'/'+escaped_str.escape(basename)
+    console.info('Sending '+resource+' to AirPlay Device');
+    device.play(resource, 0, function() {
+        console.log(">>> Playing in AirPlay device: "+basename)
+    });
 });
 browser.start();
