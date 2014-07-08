@@ -18,12 +18,12 @@ From source:
 
 ## Usage:
 
-send-to-airplay <file> <optional:port>
+    send-to-airplay <file> <optional:port>
 
 ## Example
 
-send-to-airplay ~/Download/52.mp4
-Sending /Users/youruser/Download/52.mp4 by Airplay...
-Serving directory: /Users/youruser/Download/ on port 4007
-Calling Play in: http://192.168.0.101:4007/52.mp4
-Playing file 52.mp4 in your AirPlay Device
+    send-to-airplay ~/Download/52.mp4
+    Sending /Users/youruser/Download/52.mp4 by Airplay...
+    Serving directory: /Users/youruser/Download/ on port 4007
+    Calling Play in: http://192.168.0.101:4007/52.mp4
+    Playing file 52.mp4 in your AirPlay Device
