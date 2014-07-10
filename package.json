@@ -1,6 +1,6 @@
 {
   "name": "send2airplay",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "Script for sending any video file directly to your AirPlay enabled device.",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/guerrerocarlos/send2airplay",
   "dependencies": {
-    "airplay2": "^0.1.4",
+    "airplay2": "https://github.com/guerrerocarlos/node-airplay2/tarball/master",
     "connect": "^3.0.1",
     "network-address": "0.0.4",
     "querystring": "^0.2.0",
@@ -27,5 +27,23 @@
     "s2a": "bin/send2airplay",
     "send2airplay": "bin/send2airplay"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "title": "Torrent2AppleTV",
+    "icon": "link.png",
+    "frame": false,
+    "resizable": false,
+    "show": true,
+    "fullscreen": false,
+    "toolbar": false,
+    "width": 300,
+    "height": 500,
+    "max_width": 800,
+    "max_height": 600
+  }
 }
